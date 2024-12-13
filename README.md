@@ -27,25 +27,69 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <strong>1. Setup a Domain Controller in Azure:</strong><br>
+  - Create a domain controller virtual machine and name it DC-1.<br>
+  - For Image, select Windows Server 2022. Choose a VM size with at least 2 vCPUs.<br>
+  - Proceed to Review + Create and click Create.
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/cf7tWnG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <strong>2. Set the Domain Controller’s NIC Private IP address to Static:</strong><br>
+  - Go to Virtual Machines and click on DC-1.<br>
+  - Select Networking and click on Network Settings.<br>
+  - Click on Network interface / IP configuration located at the top.<br>
+  - Click on ipconfig1 located at the bottom.<br>
+  - For Private IP address settings, set the Allocation to Static and click Save.
 </p>
+
+<br>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <img src="https://i.imgur.com/CLOUkAK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
+
+<p>
+  <strong>3. Disable the Domain Controller's Windows Firewall:</strong><br>
+  - Log into the DC-1 VM.<br>
+  - Once logged in, open the Run dialog box and open wf.msc to open Windows Firewall.<br>
+  - Click on Windows Defender Firewall Properties.<br>
+  - For each of the three profiles, set the Firewall state to Off and click OK. 
+</p>
+
+<br>
+
+<p>
+  <img src="https://i.imgur.com/kwDnI7N.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <strong>4. Setup a Client in Azure:</strong><br>
+  - Create a client virtual machine and name it Client-1<br>
+  - For Image, select Windows 10 Pro. Choose a VM size with at least 2 vCPUs.<br>
+  - Be sure to select the same region and Virtual Network that the DC-1 virtual machine is in.<br>
+  - Proceed to Review + Create and click Create.
+</p>
+
+<br>
+
+<p>
+  <img src="https://i.imgur.com/Y2RDfRR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <strong>5. Set Client-1’s DNS settings to DC-1’s Private IP address:</strong><br>
+  - Go to Virtual Machines and click on Client-1.<br>
+  - Select Networking and click on Network Settings.<br>
+  - Click on Network interface / IP configuration located at the top.<br>
+  - Under Settings on the left, click on DNS servers.<br>
+  - Select Custom.<br>
+  - In Add DNS server, paste DC-1's private IP address and click Save at the top.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/ha51LRu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
