@@ -151,13 +151,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <strong>7. Verify Client-1 VM is in Active Directory Users and Computers:</strong><br>
   - Log into the DC-1 VM.<br>
   - Navigate to Active Directory Users and Computers.<br>
-  - Expand the domain by clicking the drop-down arrow and click on Computers. The Client-1 VM we joined should show.
+  - Expand the domain by clicking the drop-down arrow and click on Computers. The Client-1 VM that was joined should show.
 </p>
 
 <p>
-  <img src="https://i.imgur.com/zF3wPqO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<p>
-  <img src="https://i.imgur.com/cQ8nX1p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/EYeQyDb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
