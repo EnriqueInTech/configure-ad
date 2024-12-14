@@ -157,3 +157,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/EYeQyDb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+  <strong>8. Create a New Organizational Unit for Client-1:</strong><br>
+  - Right-click on the domain name, hover over New and select Organizational Unit.<br>
+  - Name the new organizational unit _CLIENTS and click OK.<br>
+  - Drag Client-1 into the _CLIENTS OU and click Yes to move it.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/EYeQyDb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
