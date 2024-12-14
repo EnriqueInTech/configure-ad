@@ -27,14 +27,26 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-  <strong>1. Setup a Domain Controller in Azure:</strong><br>
-  - Create a domain controller virtual machine and name it DC-1.<br>
-  - For Image, select Windows Server 2022. Choose a VM size with at least 2 vCPUs.<br>
-  - Proceed to Review + Create and click Create.
+  <strong>1. Install Active Directory:</strong><br>
+  - Log into the Domain Controller VM.<br>
+  - Click on the Windows Start button and click Server Manager.<br>
+  - On the Server Manager Dashboard, click Add roles and features.<br>
+  - In the Wizard, click Next until you reach Server Roles.<br>
+  - In Server Roles, select Active Directory Domain Services and click Add features.<br>
+  - Continue clicking Next until you reach Confirmation.<br>
+  - In Confirmation, select Restart, click yes and then click Install.
 </p>
 
 <p>
-  <img src="https://i.imgur.com/cf7tWnG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/rE0YPdz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <img src="https://i.imgur.com/ESpBKYj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <img src="https://i.imgur.com/DOorfaz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
