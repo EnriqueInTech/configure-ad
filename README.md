@@ -50,12 +50,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  <strong>2. Set the Domain Controller’s NIC Private IP address to Static:</strong><br>
-  - Go to Virtual Machines and click on DC-1.<br>
-  - Select Networking and click on Network Settings.<br>
-  - Click on Network interface / IP configuration located at the top.<br>
-  - Click on ipconfig1 located at the bottom.<br>
-  - For Private IP address settings, set the Allocation to Static and click Save.
+  <strong>2. Promote Server to Domain Controller:</strong><br>
+  - On the Server Dashboard, click on the Notifications button (flag icon) at the top right and click Promote this server to a domain controller.<br>
+  - In Deployment Configuration, select Add a new forest.<br>
+  - For the Root domain name, type the domain you'll be using and then click Next.<br>
+  - In Domain Controller Options, confirm the password you'll be using and then click Next.<br>
+  - Continue clicking Next in the wizard. For Prerequisites Check click Install.<br>
+  - The installation will prompt a restart, which will require reconnecting to the VM via Remote Desktop Connection.
 </p>
 
 <br>
