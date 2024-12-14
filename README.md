@@ -135,7 +135,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Below Related settings, click on Rename this PC (advanced).<br>
   - In the Computer Name tab click Change.<br>
   - In the Member of options, select Domain. Provide the domain and click OK.<br>
-  - In the Windows Security prompt, enter the Domain Admin's username and password to complete joining Client-1.
+  - In the Windows Security prompt, enter the Domain Admin's username and password to complete joining Client-1.<br>
+  - Proceed with restarting the VM when prompted.
 </p>
 
 <p>
