@@ -81,11 +81,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  <strong>4. Setup a Client in Azure:</strong><br>
-  - Create a client virtual machine and name it Client-1<br>
-  - For Image, select Windows 10 Pro. Choose a VM size with at least 2 vCPUs.<br>
-  - Be sure to select the same region and Virtual Network that the DC-1 virtual machine is in.<br>
-  - Proceed to Review + Create and click Create.
+  <strong>4. Create a Domain Admin user within the Domain:</strong><br>
+  - Click on the Windows Start button and click Windows Administrative Tools. Select Active Directory Users and Computers.<br>
+  - Right-click on the domain name, hover over New and select Organizational Unit.<br>
+  - Name the new organizational unit _EMPLOYEES and click OK.<br>
+  - Create another organizational unit named _ADMINS.<br>
+  - Right-click on the newly created _ADMINS folder, hover over New and select User.<br>
+  - Provide the user's full name and logon name. Click Next and provide a password. Click Next and Finish.<br>
+  - Right-click on the newly created user within the _ADMINS folder and select Add to a group.<br>
+  - In the Enter the object names field, type domain admins and click Check Names. Click OK.
 </p>
 
 <br>
