@@ -121,7 +121,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <strong>5. Log in with the Newly Created Username:</strong><br>
   - Log out off the DC-1 VM.<br>
-  - Log back into DC-1 with the new username: domain name, backslash(\), followed by the new username.
+  - Log back into DC-1 with the new username: domain name, backslash(\), followed by the logon name created in the previous step.
 </p>
 
 <p>
