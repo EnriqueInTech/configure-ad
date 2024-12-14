@@ -129,7 +129,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  <strong>6. Join Client-1 to your Domain:</strong><br>
+  <strong>6. Join Client-1 VM to your Domain:</strong><br>
   - Log into the Client-1 VM.<br>
   - Right-Click on the Windows Start button and click on System.<br>
   - Below Related settings, click on Rename this PC (advanced).<br>
@@ -137,6 +137,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - In the Member of options, select Domain. Provide the domain and click OK.<br>
   - In the Windows Security prompt, enter the Domain Admin's username and password to complete joining Client-1.<br>
   - Proceed with restarting the VM when prompted.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/zF3wPqO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <img src="https://i.imgur.com/cQ8nX1p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <strong>7. Verify Client-1 VM is in Active Directory Users and Computers:</strong><br>
+  - Log into the DC-1 VM.<br>
+  - Navigate to Active Directory Users and Computers.<br>
+  - Expand the domain by clicking the drop-down arrow and click on Computers. The Client-1 VM we joined should show.
 </p>
 
 <p>
