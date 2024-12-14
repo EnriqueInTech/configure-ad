@@ -53,7 +53,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <strong>2. Promote Server to Domain Controller:</strong><br>
   - On the Server Dashboard, click on the Notifications button (flag icon) at the top right and click Promote this server to a domain controller.<br>
   - In Deployment Configuration, select Add a new forest.<br>
-  - For the Root domain name, type the domain you'll be using and then click Next.<br>
+  - For the Root domain name, type the domain name you'll be using and then click Next.<br>
   - In Domain Controller Options, confirm the password you'll be using and then click Next.<br>
   - Continue clicking Next in the wizard. For Prerequisites Check click Install.<br>
   - The installation will prompt a restart, which will require reconnecting to the VM via Remote Desktop Connection.
@@ -66,8 +66,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  <strong>3. Disable the Domain Controller's Windows Firewall:</strong><br>
-  - Log into the DC-1 VM.<br>
+  <strong>3. Log back into DC-1:</strong><br>
+  - Log into the DC-1 VM using your domain name, backslash(\), your username.<br>
   - Once logged in, open the Run dialog box and open wf.msc to open Windows Firewall.<br>
   - Click on Windows Defender Firewall Properties.<br>
   - For each of the three profiles, set the Firewall state to Off and click OK. 
@@ -76,7 +76,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br>
 
 <p>
-  <img src="https://i.imgur.com/kwDnI7N.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/9j18bmh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
