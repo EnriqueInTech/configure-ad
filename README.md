@@ -71,10 +71,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
   <strong>3. Log back into DC-1:</strong><br>
-  - Log into the DC-1 VM using your domain name, backslash(\), your username.<br>
-  - Once logged in, open the Run dialog box and open wf.msc to open Windows Firewall.<br>
-  - Click on Windows Defender Firewall Properties.<br>
-  - For each of the three profiles, set the Firewall state to Off and click OK. 
+  - Log into the DC-1 VM using your domain name, backslash(\), your username. 
 </p>
 
 <br>
