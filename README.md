@@ -119,15 +119,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  <strong>5. Set Client-1’s DNS settings to DC-1’s Private IP address:</strong><br>
-  - Go to Virtual Machines and click on Client-1.<br>
-  - Select Networking and click on Network Settings.<br>
-  - Click on Network interface / IP configuration located at the top.<br>
-  - Under Settings on the left, click on DNS servers.<br>
-  - Select Custom.<br>
-  - In Add DNS server, paste DC-1's private IP address and click Save at the top.
+  <strong>5. Log in with the Newly Created Username:</strong><br>
+  - Log out off the DC-1 VM.<br>
+  - Log back into DC-1 with the new username: domain name, backslash(\), followed by the new username.
 </p>
 
 <p>
-  <img src="https://i.imgur.com/ha51LRu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/s9Owf3G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
