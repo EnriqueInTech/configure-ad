@@ -168,3 +168,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/KGo4FHM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+  <strong>9. Setup Remote Desktop for non-administrative users (normal users) on Client-1:</strong><br>
+  - Log into the Client-1 VM as the Domain Admin.<br>
+  - Open System properties and click Remote Desktop.<br>
+  - Below User accounts, click on Select users that can remotely access this PC.<br>
+  - Click Add and in the object name field, enter domain users.<br>
+  - Click Check Names and click OK. Click OK once more.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/Cv94588.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+  <img src="https://i.imgur.com/vUKKFNt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
