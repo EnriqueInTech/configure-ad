@@ -185,3 +185,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/vUKKFNt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+  <strong>10. Create Additional Users and Log into Client-1 with one of the Users:</strong><br>
+  - Log into the DC-1 VM as the Domain Admin.<br>
+  - Open Windows PowerShell ISE as an administrator.<br>
+  - Create a new File in PowerShell and paste the contents of the script into it.<br>
+  - Click Run Script (green arrow) and observe the additional users being created.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/1owmRnb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
